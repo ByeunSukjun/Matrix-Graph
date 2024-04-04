@@ -5,8 +5,9 @@ int main() {
   
     int N = 2, K = 3, M = 2; 
     float A[2][3] = { {1, 2, 3}, {4, 5, 6} }; 
-    float B[3][2] = { {1, 0}, {0, 2}, {1, 3} }; 
-    float C[2][2] = {}; 
+    float B[3][2] = { {1, 0}, {0, 2}, {1, 3} }, **C; 
+    C = new float* [N];
+    for (int n = 0; n < N; n++) C[n] = new float[M];
 
 
     for (int n = 0; n < N; n++) {
